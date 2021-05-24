@@ -22,6 +22,14 @@ h1 {
   flex-wrap: wrap;
 }
 
+.light {
+  background-color: #535353;
+}
+
+.dark {
+  background-color: #333333;
+}
+
 .grid div {
   width: 20px;
   height: 20px;
@@ -41,8 +49,10 @@ h1 {
 
 .snake {
   background: #789bb2;
+  border-radius: 50%;
 }
 
 .apple {
   background: rgb(251, 177, 40);
+  border-radius: 50%;
 }
