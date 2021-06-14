@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const startButton = document.querySelector(".startButton");
 
   const width = 10;
+  let left = document.querySelector(".left");
+  let bottom = document.querySelector(".bottom");
+  let right = document.querySelector(".right");
+  let up = document.querySelector(".top");
   let currentIndex = 0;
   let appleIndex = 0;
   let currentSnake = [2, 1, 0];
@@ -77,6 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
       direction = +width;
     }
   }
+
+  up.addEventListener("click", () => (direction = -width));
+  bottom.addEventListener("click", () => (direction = +width));
+  left.addEventListener("click", () => (direction = -1));
+  right.addEventListener("click", () => (direction = 1));
 
   document.addEventListener("keyup", control);
   startButton.addEventListener("click", startGame);
